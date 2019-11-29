@@ -1,0 +1,30 @@
+<ion-content padding class="backImage">
+  <div class="logo">
+    <img src="/assets/imagens/icon-branco.png" alt="">
+    <span>Merkador</span>
+  </div>
+
+  <ion-list no-lines class="list-transparent">
+    <ion-item>
+      <ion-input [(ngModel)]="form.email" type="text" placeholder="E-mail"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="form.senha" type="password" placeholder="Senha"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-grid>
+    <ion-row>
+      <button ion-button color="secondary" block round (click)="login()">
+        Efetuar Login
+      </button>
+    </ion-row>
+    <ion-row>
+      <button ion-button block outline round color="secondary" (click)="cadastrar()">
+        Novo Usuário
+      </button>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>
